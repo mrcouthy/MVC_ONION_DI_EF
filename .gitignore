@@ -1,0 +1,16 @@
+/Simple.Repository/bin
+/Simple.Service/bin
+/Simple.Web/bin
+/Simple.Desktop/bin
+/Simple.Domain/bin
+/Simple.Interface/bin
+/Simple.Repository.Tests/bin
+/Simple.Interface/obj
+/Simple.Repository.Tests/obj
+/Simple.Repository/obj
+/Simple.Service/obj
+/Simple.Web/obj
+/Simple.Desktop/obj
+/Simple.Domain/obj
+/packages
+/*.suo
