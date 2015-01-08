@@ -13,11 +13,9 @@ namespace Simple.Web.Controllers
 {
     public class UsersController : Controller
     {
+        public IUsersService us { get; set; }
         public ActionResult Index()
         {
-            string constr = ConfigurationManager.ConnectionStrings["SimpleConnection"].ConnectionString;
-            IUsersRepository ur = new UsersRepository(constr);
-            IUsersService us = new UsersService(ur);
             return this.View(us.GetUsers());
         }
     }

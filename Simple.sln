@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Service", "3.Service", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Repository", "2.Repository", "{58118174-FCD4-44BD-B47C-D01A358B2F9C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Common", "1.Common", "{B65DF18F-FE73-4C07-B260-A3D560CD2DC5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Core", "1.Core", "{B65DF18F-FE73-4C07-B260-A3D560CD2DC5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Tests", "5.Tests", "{180662DF-408A-40CE-B6DE-AE1FEDA071F4}"
 EndProject
@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Scripts", "6.Scripts", "{
 	ProjectSection(SolutionItems) = preProject
 		CreateUsers.Sql = CreateUsers.Sql
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Common", "0.Common", "{3DFC36B4-E79B-4D7B-A06E-4CD6AFAC0197}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

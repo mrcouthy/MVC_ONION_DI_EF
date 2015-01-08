@@ -64,7 +64,6 @@
             this.Controls.Add(this.usersGrid);
             this.Name = "Start";
             this.Text = "Simple";
-            this.Load += new System.EventHandler(this.Start_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usersGrid)).EndInit();
             this.ResumeLayout(false);
 

@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Autofac;
 namespace Simple.Desktop
 {
     public partial class Start : Form
@@ -22,18 +22,14 @@ namespace Simple.Desktop
             InitializeComponent();
         }
 
-        IUsersService us;
-        private void Start_Load(object sender, EventArgs e)
-        {
-            string constr = ConfigurationManager.ConnectionStrings["SimpleConnection"].ConnectionString;
-            IUsersRepository ur = new UsersRepository(constr);
-             us = new UsersService(ur);
-
-        }
-
+        public IUsersService us { get; set; }
         private void btnLoadUsers_Click(object sender, EventArgs e)
         {
-            usersGrid.DataSource = us.GetUsers();
+            using (var scope = DIConfig.container.BeginLifetimeScope())
+            {
+                var us = scope.Resolve<IUsersService>();
+                usersGrid.DataSource = us.GetUsers();
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Simple.Desktop
         [STAThread]
         static void Main()
         {
+            DIConfig.ResolveDependencies();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Start());

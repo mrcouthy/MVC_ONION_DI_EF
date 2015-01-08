@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Context\SimpleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryModule.cs" />
     <Compile Include="UsersRepository.cs" />
   </ItemGroup>
   <ItemGroup>
